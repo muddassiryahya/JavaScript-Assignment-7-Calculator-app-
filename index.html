@@ -12,36 +12,32 @@
     <section class="Calculator">
 
         <form>
-            <input type="text" class="screen">
+            <input type="text" class="screen"
+            placeholder="0" id="inputBox" readonly>
 
         </form>
 
         <div class="buttons">
-            <button type="button" class="btn" data-num="%">%</button>
-            <button type="button" class="btn" data-num="%">CE</button>
-            <button type="button" class="btn" data-num="%">C</button>
-            <button type="button" class="btn" data-num="/"><i class="fa-solid fa-divide"></i></button>
-
-            <button type="button" class="btn" data-num="7">7</button>
-            <button type="button" class="btn" data-num="8">8</button>
-            <button type="button" class="btn" data-num="9">9</button>
-            <button type="button" class="btn" data-num="*"><i class="fa-solid fa-xmark"></i></button>
-            <button type="button" class="btn" data-num="4">4</button>
-            <button type="button" class="btn" data-num="5">5</button>
-            <button type="button" class="btn" data-num="6">6</button>
-            <button type="button" class="btn" data-num="-">-</button>
-            <button type="button" class="btn" data-num="1">1</button>
-            <button type="button" class="btn" data-num="2">2</button>
-            <button type="button" class="btn" data-num="3">3</button>
-            <button type="button" class="btn" data-num="+">+</button>
-            <button type="button" class="btn" data-num="0">0</button>
-            <button type="button" class="btn" data-num=".">.</button>
-            <button type="button" class="btn" data-num="=">=</button>
-
-
-
-
-            
+            <button onclick="clearResult()" style="font-size: 18px;" class="operator ac">AC</button>
+            <button onclick="del()" style="font-size: 18px;" class="operator del">DEL</button>
+            <button onclick="setNumber('/')" class="operator">%</button>
+            <button onclick="setNumber('/')" class="operator"><i class="fa-solid fa-divide"></i></button>
+            <button onclick="setNumber('7')">7</button>
+            <button onclick="setNumber('8')">8</button>
+            <button onclick="setNumber('9')">9</button>
+            <button onclick="setNumber('*')" class="operator"><i class="fa-solid fa-xmark"></i></button>
+            <button onclick="setNumber('4')">4</button>
+            <button onclick="setNumber('5')">5</button>
+            <button onclick="setNumber('6')">6</button>
+            <button onclick="setNumber('-')" class="operator">-</button>
+            <button onclick="setNumber('1')">1</button>
+            <button onclick="setNumber('2')">2</button>
+            <button onclick="setNumber('3')">3</button>
+            <button onclick="setNumber('+')" class="operator">+</button>
+            <button onclick="setNumber('0')">0</button>
+            <button onclick="setNumber('00')">00</button>
+            <button onclick="setNumber('.')">.</button>
+            <button onclick="result('=')" class="operator" style="background-color: lightblue;">=</button>
         </div>
 
     </section>
